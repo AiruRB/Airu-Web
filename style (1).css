@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #2E7D32;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f4f6f5;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tkoga {
+  background: #2E7D32;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tkoga ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #66BB6A;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contacto {
+  background: #f4f6f5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
