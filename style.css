@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2E7D32;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.credibilidad {
+  text-align: center;
+  padding: 15px;
+  background: #f0f4f2;
+  font-size: 0.9rem;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.historia {
+  font-size: 1.1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 240px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.tkoga {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: white;
+  padding: 80px 20px;
+}
+
+.tkoga ul {
+  list-style: none;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #66BB6A;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.contacto {
+  background: #f4f6f5;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #eee;
+}
+
+.footer-logo {
+  height: 50px;
+}
