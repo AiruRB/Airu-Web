@@ -56,6 +56,15 @@ nav a {
   transform: translateY(-5px);
 }
 
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
 .tkoga {
   background: linear-gradient(135deg, #1b5e20, #2e7d32);
   color: white;
