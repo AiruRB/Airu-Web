@@ -36,6 +36,10 @@ nav a {
   text-align: center;
 }
 
+.section h2 {
+  margin-bottom: 30px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
