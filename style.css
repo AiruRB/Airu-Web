@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #2E7D32;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 240px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.tkoga {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: white;
+  padding: 80px 20px;
+}
+
+.tkoga ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #66BB6A;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contacto {
+  background: #f4f6f5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
