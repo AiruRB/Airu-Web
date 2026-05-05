@@ -129,3 +129,13 @@ footer {
   border: 1px solid white;
   margin-left: 10px;
 }
+
+.tkoga h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.tkoga p {
+  max-width: 700px;
+  margin: auto;
+}
