@@ -1,107 +1,185 @@
-body {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Inter', sans-serif;
   color: #1a1a1a;
   background: #fafafa;
+  line-height: 1.6;
 }
 
+/* HEADER */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
   background: white;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
-  height: 60px;
+  height: 55px;
 }
 
 nav a {
-  margin-left: 20px;
+  margin-left: 25px;
   text-decoration: none;
   color: #2E7D32;
   font-weight: 500;
+  transition: 0.2s;
 }
 
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* HERO */
 .hero {
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
   text-align: center;
+  padding: 20px;
+
   background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
               url('images/hero.jpg') center/cover no-repeat;
   color: white;
 }
 
+.hero-content {
+  max-width: 700px;
+}
+
 .hero h2 {
   font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
+  opacity: 0.9;
 }
 
+/* BOTONES */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #66BB6A;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #57a95a;
+  transform: translateY(-2px);
+}
+
+/* CREDIBILIDAD */
 .credibilidad {
   text-align: center;
   padding: 15px;
-  background: #f0f4f2;
+  background: #eef4f0;
   font-size: 0.9rem;
+  color: #444;
 }
 
+/* SECCIONES */
 .section {
-  padding: 80px 20px;
-  text-align: center;
+  padding: 90px 20px;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* HISTORIA */
 .historia {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  color: #444;
 }
 
+/* CARDS */
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
   background: white;
-  padding: 25px;
-  width: 240px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  padding: 30px;
+  width: 260px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.2s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* T-KOGA */
 .tkoga {
   background: linear-gradient(135deg, #1b5e20, #2e7d32);
   color: white;
-  padding: 80px 20px;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.tkoga h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.tkoga p {
+  max-width: 700px;
+  margin: 10px auto;
 }
 
 .tkoga ul {
   list-style: none;
   padding: 0;
-}
-
-.btn {
-  display: inline-block;
   margin-top: 20px;
-  padding: 12px 24px;
-  background: #66BB6A;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
 }
 
+.tkoga li {
+  margin: 8px 0;
+}
+
+/* CONTACTO */
 .contacto {
   background: #f4f6f5;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px;
@@ -110,4 +188,28 @@ footer {
 
 .footer-logo {
   height: 50px;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
