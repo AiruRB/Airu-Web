@@ -261,3 +261,7 @@ footer {
     flex-direction: column;
   }
 }
+.tkoga-doc {
+  margin-top: 30px;
+  text-align: center;
+}
