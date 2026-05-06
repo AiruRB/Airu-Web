@@ -304,3 +304,14 @@ footer {
   }
 
 }
+@media (max-width: 768px) {
+
+  .tkoga-media {
+    grid-template-columns: 1fr;
+  }
+
+  .tkoga-media .main-img {
+    grid-column: span 1;
+  }
+
+}
