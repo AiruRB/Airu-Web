@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-  height: 55px;
+  height: 60px;
 }
 
 nav a {
@@ -80,7 +80,7 @@ nav a:hover {
   text-decoration: none;
   border-radius: 10px;
   font-weight: 500;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 .btn:hover {
@@ -130,11 +130,11 @@ nav a:hover {
   width: 260px;
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .card h3 {
@@ -146,32 +146,104 @@ nav a:hover {
   font-size: 0.95rem;
 }
 
-/* T-KOGA */
+/* ========================= */
+/* 🔬 T-KOGA (MEJORADO) */
+/* ========================= */
+
 .tkoga {
   background: linear-gradient(135deg, #1b5e20, #2e7d32);
   color: white;
-  padding: 90px 20px;
-  text-align: center;
+  padding: 100px 20px;
+}
+
+.tkoga-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tkoga-text {
+  flex: 1;
+  min-width: 300px;
 }
 
 .tkoga h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.tkoga-sub {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.tkoga-text p {
   margin-bottom: 15px;
+  line-height: 1.7;
+  max-width: 600px;
 }
 
-.tkoga p {
-  max-width: 700px;
-  margin: 10px auto;
+.tkoga-text h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.tkoga ul {
+/* LISTA PRO */
+.tkoga-text ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.tkoga li {
-  margin: 8px 0;
+.tkoga-text li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.tkoga-text li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #a5d6a7;
+}
+
+/* IMÁGENES */
+.tkoga-media {
+  flex: 1;
+  display: grid;
+  gap: 15px;
+}
+
+.tkoga-media img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
+
+.tkoga-media img:hover {
+  transform: scale(1.03);
+}
+
+/* BOTÓN MARBETE */
+.tkoga-doc {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.tkoga-doc .btn {
+  background: white;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.tkoga-doc .btn:hover {
+  background: #e8f5e9;
 }
 
 /* CONTACTO */
@@ -187,7 +259,7 @@ footer {
 }
 
 .footer-logo {
-  height: 50px;
+  height: 55px;
   opacity: 0.9;
 }
 
@@ -212,56 +284,13 @@ footer {
     align-items: center;
   }
 
-}
-
-.tkoga-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.tkoga-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.tkoga-sub {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin-bottom: 15px;
-}
-
-.tkoga-text ul {
-  margin-top: 10px;
-}
-
-.tkoga-text li {
-  margin-bottom: 6px;
-}
-
-.tkoga-media {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-}
-
-.tkoga-media img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
   .tkoga-container {
     flex-direction: column;
+    gap: 30px;
   }
-}
-.tkoga-doc {
-  margin-top: 30px;
-  text-align: center;
+
+  .tkoga-text {
+    text-align: left;
+  }
+
 }
