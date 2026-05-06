@@ -315,3 +315,12 @@ footer {
   }
 
 }
+.footer-info {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footer-info p {
+  margin: 3px 0;
+}
