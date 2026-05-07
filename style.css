@@ -398,3 +398,7 @@ footer {
   letter-spacing: 0.3px;
 }
 
+.footer-copy {
+  margin-top: 8px;
+  opacity: 0.7;
+}
