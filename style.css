@@ -236,20 +236,82 @@ nav a:hover {
   box-shadow: 0 15px 30px rgba(0,0,0,0.25);
   transition: 0.3s;
 }
-.video-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:30px;
-  margin-top:30px;
+/* =========================
+   VIDEOS
+========================= */
+
+.videos {
+  background: #ffffff;
 }
 
-.video-grid iframe{
-  width:100%;
-  aspect-ratio:16/9;
-  border:none;
-  border-radius:12px;
+.videos-sub {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #4f5b52;
+  font-size: 1.05rem;
 }
 
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.video-card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+
+  transition: 0.25s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+}
+
+.video-card h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1b5e20;
+}
+
+.video-card p {
+  color: #555;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+
+  border-radius: 14px;
+  overflow: hidden;
+
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  border: 0;
+}
+
+.short-wrapper {
+  padding-bottom: 177%;
+}
 
 .tkoga-media img:hover {
   transform: scale(1.04);
@@ -335,4 +397,4 @@ footer {
   color: #666;
   letter-spacing: 0.3px;
 }
-<p class="footer-copy">© 2026 AIRU · Todos los derechos reservados</p>
+
